@@ -1283,3 +1283,80 @@
 | 12 | HIGH | Wrong Description | Fix `teammateDefaultModel` (Global Config) — removed in v2.1.251; teammates now inherit the lead's model by default. Marked as removed. Confirmed in v2.1.251 changelog | ✅ COMPLETE (marked removed) — NEW |
 | 13 | HIGH | Hook Count | Update hooks redirect blurb from "26 hook events" to "28 hook events" — `PreModelSwitch` and `PostModelSwitch` added in v2.1.252. Confirmed in v2.1.252 changelog | ✅ COMPLETE (count updated) — NEW |
 | 14 | MED | Missing Env Vars | Add 6 missing env vars: `ANTHROPIC_DEFAULT_MODEL` (v2.1.236+, last-resort model fallback), `CLAUDE_CODE_PROJECT_DIR_NAME` (v2.1.234+, transcript dir name), `CLAUDE_CODE_TOOL_MEMORY_LIMIT` (v2.1.233, Linux cgroup memory cap), `CLAUDE_CODE_WEBFETCH_CACHE_TTL_MS` (v2.1.233, WebFetch cache TTL), `CLAUDE_CODE_ENABLE_TODO_TOOLS` (v2.1.234, legacy todo tools), `CLAUDE_CODE_WORKFLOW_PREFIX_STAGGER_MS` (v2.1.229, agent launch stagger). Confirmed in changelog | ✅ COMPLETE (all 6 added) — NEW |
+
+---
+
+## [2026-10-13 10:55 AM PKT] Claude Code v2.1.296
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Version Metadata | Update version badge v2.1.252 → v2.1.296; update header counts from "140+ settings / 315+ env vars" to "244+ settings / 396+ env vars" | COMPLETE (badge and header updated) — NEW |
+| 2 | HIGH | Wrong Type | Fix `feedbackDrafts` type: was `boolean` with default `true`; now `string` with values `"notify"/"quiet"/"off"`, default `"notify"`, scope user or managed. Env: `CLAUDE_CODE_SEND_FEEDBACK=0`. Confidence 0.95 | COMPLETE (type and values corrected) — NEW |
+| 3 | HIGH | Wrong Scope | Fix `askUserQuestionTimeout` scope: was "Only honored from project and local settings"; now "Only honored from user and managed settings". Confidence 0.9 | COMPLETE (scope corrected) — NEW |
+| 4 | HIGH | Wrong Values | Fix `dialogExpiry` values: now explicit enum `"60s"/"5m"/"10m"/"never"`, default `"5m"`, scope user or managed. Added env override `CLAUDE_CODE_USER_DIALOG_TIMEOUT_MS` | COMPLETE (values corrected) — NEW |
+| 5 | HIGH | Wrong Semantics | Fix `enableArtifact`: was described as "opt-in that turns the tool on"; officially can only turn off (`false` disables, `true` = unset). Confidence 0.9 | COMPLETE (semantics corrected) — NEW |
+| 6 | HIGH | Wrong Semantics | Fix `alwaysThinkingEnabled`: was "Enable thinking, default false"; officially thinking is on by default, `false` disables, `true` = no-op. No effect on Opus/Sonnet/Haiku 5.5 or Fable. Confidence 0.9 | COMPLETE (semantics corrected) — NEW |
+| 7 | HIGH | Wrong Type | Fix `strictKnownMarketplaces`: was `boolean`; officially an array of marketplace source objects. Empty array blocks everything. Alias: `allowedMarketplaces`. Confidence 0.95 | COMPLETE (type changed to array, description updated) — NEW |
+| 8 | HIGH | Wrong Note | Fix `/model` persistence note: was "current session only, press d for default"; officially saves as persistent default, press `s` for session-only. Confidence 0.85 | COMPLETE (inverted note corrected) — NEW |
+| 9 | HIGH | Wrong Scope | Fix `allowedMcpServers` and `deniedMcpServers`: were "Managed only"; officially any file, with entries merging. Confidence 0.9 | COMPLETE (scope changed to Any) — NEW |
+| 10 | HIGH | Wrong Scope | Fix `enforceAvailableModels`: removed "(Managed only)" — officially any file. Confidence 0.85 | COMPLETE (managed-only restriction removed) — NEW |
+| 11 | HIGH | Wrong Version | Fix `teammateDefaultModel` removal version: was v2.1.251; officially v2.1.234. Confidence 0.9 | COMPLETE (corrected to v2.1.234) — NEW |
+| 12 | HIGH | Wrong Version | Fix `modelSettings` version requirement: was v2.1.243; requires v2.1.251. Also corrected `/effort` history. Added `maxEffortLevel` and `autoCompactWindow` fields. Confidence 0.85 | COMPLETE (version and fields corrected) — NEW |
+| 13 | HIGH | Wrong Semantics | Fix `ultracode`: was "Session-only — not persisted"; officially a persistent boolean settable in any file. Confidence 0.85 | COMPLETE (session-only note removed) — NEW |
+| 14 | HIGH | Missing Settings | Add 3 missing General settings: `syncClaudeAiSkills` (v2.1.275), `syncClaudeAiPlugins` (v2.1.275), `promptSuggestionEnabled`. Confidence 0.9 | COMPLETE (all 3 added) — NEW |
+| 15 | HIGH | Missing Settings | Add 5 missing Display settings: `timeFormat` (v2.1.257), `timeZone` (v2.1.257), `maxProseWidth` (v2.1.282), `subagentStatusLine`, `bashEditDiffEnabled` (v2.1.269). Confidence 0.9 | COMPLETE (all 5 added) — NEW |
+| 16 | HIGH | Missing Settings | Add 2 missing Plugin settings: `prependPlugins` and `appendPlugins` (~v2.1.287, Claude Mods). Confidence 0.85 | COMPLETE (both added) — NEW |
+| 17 | HIGH | Missing Settings | Add 2 missing MCP settings: `allowClaudeInChromeWithManagedMcp` (v2.1.282) and `allowedProviders` (v2.1.285). Confidence 0.95 | COMPLETE (both added) — NEW |
+| 18 | HIGH | Cache TTL | Fix `promptCacheTtl` and `subagentPromptCacheTtl` descriptions: both accept "5m" or "1h"; subagent key covers subagents, workflows, and background/helper requests. Added precedence order. Confidence 0.85 | COMPLETE (descriptions corrected) — NEW |
+| 19 | HIGH | Missing Env Vars | Add 8 new env vars from v2.1.288–296: `CLAUDE_CODE_DISABLE_STRUCTURED_OUTPUTS`, `CLAUDE_CODE_WEB_SEARCH_REFILLS_PER_HOUR`, `CLAUDE_CODE_OVERLOADED_RETRY_BASE_DELAY_MS`, `CLAUDE_CODE_OVERLOADED_RETRY_MAX_DELAY_MS`, `CLAUDE_CODE_RETRY_WATCHDOG_MAX_WAIT_MS`, `CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL`, `MCP_PROTOCOL_NEGOTIATION`. Confidence 0.9 | COMPLETE (all 8 added) — NEW |
+| 20 | HIGH | Wrong Env Var | Fix `USE_BUILTIN_RIPGREP` description: was inverted ("Set to 1 to use bundled"); officially `0` means use system rg. Confidence 0.9 | COMPLETE (description corrected) — NEW |
+| 21 | HIGH | Removed Env Var | Fix `CLAUDE_CODE_ENABLE_OPUS_4_7_FAST_MODE`: removed in v2.1.142, now a no-op. Confidence 0.9 | COMPLETE (marked removed) — NEW |
+| 22 | HIGH | Wrong Env Var | Fix `CLAUDE_CODE_WEBFETCH_CACHE_TTL_MS`: default is 900000ms (15min); `0` keeps the default, does not disable. Confidence 0.85 | COMPLETE (corrected) — NEW |
+| 23 | HIGH | Stale Annotations | Remove "not yet on official env-vars page" from 14 env vars now confirmed official: `CLAUDE_CODE_SESSION_ID`, `DISABLE_UPDATES`, `CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP`, `ENABLE_PROMPT_CACHING_1H`, `FORCE_PROMPT_CACHING_5M`, `CLAUDE_CODE_MAX_TURNS`, `CLAUDE_CODE_PROCESS_WRAPPER`, `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`, `CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION`, `MCP_CONNECTION_NONBLOCKING`, `CLAUDE_CODE_MCP_AUTO_BACKGROUND_MS`, `CLAUDE_CODE_DISABLE_MOUSE_CLICKS`, `CLAUDE_CODE_OTEL_CONTENT_MAX_LENGTH`, `OTEL_LOG_RAW_API_BODIES`, `OTEL_LOG_USER_PROMPTS`, `OTEL_LOG_ASSISTANT_RESPONSES`, `CLAUDE_CODE_FORK_SUBAGENT`, `DISABLE_AUTO_COMPACT`. Deprecated: `ENABLE_PROMPT_CACHING_1H_BEDROCK` | COMPLETE (annotations removed; deprecated key marked) — NEW |
+| 24 | MED | Wrong Description | Fix `spellcheck` object fields: was `enabled`+`binary`; officially `enabled`, `checker` (aspell/hunspell/ispell/auto), `language`, `color`. Added scope: user or managed. Confidence 0.9 | COMPLETE (fields corrected) — NEW |
+| 25 | MED | Wrong Description | Fix `keybindingFlavor`: add `"classic"` as a valid value. Confidence 0.8 | COMPLETE (value added) — NEW |
+| 26 | MED | Wrong Scope | Fix `axScreenReader`: remove "Only applies at the User scope" — officially any file. Confidence 0.85 | COMPLETE (restriction removed) — NEW |
+| 27 | MED | Wrong Scope | Fix `extraKnownMarketplaces`: was scope "Project"; officially any file, trust-gated in project/local. Added `autoUpdate` field note. Confidence 0.85 | COMPLETE (scope changed to Any) — NEW |
+| 28 | MED | Wrong Scope | Fix `autoMemoryDirectory`: was "Not accepted in project settings"; officially any file, project/local honored after workspace trust. Confidence 0.85 | COMPLETE (corrected) — NEW |
+| 29 | MED | MCP Example | Fix `serverCommand` in allowedMcpServers example: was glob string; officially an array `["npx","-y","@mcp/server"]`. Confidence 0.85 | COMPLETE (example corrected) — NEW |
+| 30 | MED | Hook Events | Update CLAUDE.md hook events list from 15 to 33 events (PostToolBatch, UserPromptExpansion, StopFailure, CwdChanged, DirectoryAdded, FileChanged, WorktreeCreate/Remove, PostCompact, Elicitation/ElicitationResult, InstructionsLoaded, MessageDisplay, PermissionDenied, TaskCreated). Rule 7A | COMPLETE (CLAUDE.md hook list updated) — NEW |
+| 31 | MED | CLAUDE.md | CLAUDE.md subagent effort note omits `xhigh`; model aliases omit `fable` and `best` | ON HOLD (CLAUDE.md references are examples in descriptions, not exhaustive — acceptable gap) |
+| 32 | LOW | effortLevel | Note that Opus 5.5 and later 5.x models ignore top-level `effortLevel` in user settings. Confidence 0.85 | COMPLETE (note added to effortLevel description) — NEW |
+| 33 | LOW | Useful Commands | Update `/model` command description to reflect correct persistence behavior | COMPLETE (updated) — NEW |
+
+---
+
+## [2026-11-11 10:47 AM PKT] Claude Code v2.1.322
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Version Metadata | Update badge v2.1.296 → v2.1.322; header "244+ settings / 396+ env vars" → "249+ settings / 403+ env vars"; Sources count "~180 keys" → "249+" | COMPLETE (all updated) — NEW |
+| 2 | HIGH | Missing Settings | Add `idleCompaction` (object with `type`/`model`/`minTokens`, v2.1.299) to General Settings | COMPLETE (added) — NEW |
+| 3 | HIGH | Missing Settings | Add `permissions.blockWritesOutsideWorkingDirectories` (boolean, v2.1.314) and `permissions.denyInsteadOfPrompting` (boolean, v2.1.319) to Permissions table | COMPLETE (both added) — NEW |
+| 4 | HIGH | Missing Settings | Add `sandbox.allowNestedUserNamespaces` (boolean, v2.1.305) to Sandbox Settings table | COMPLETE (added) — NEW |
+| 5 | HIGH | Wrong Description | Fix `advisorModel`: when unset, advisor is off (disabled) — was incorrectly described as "uses session model" | COMPLETE (corrected) — NEW |
+| 6 | HIGH | Wrong Description | Fix `permissions.defaultMode` remote note: Remote environment honors `default` and `auto` (not just `acceptEdits` and `plan`) | COMPLETE (corrected) — NEW |
+| 7 | HIGH | Wrong Nesting | Fix `skipDangerousModePermissionPrompt`: was nested under `permissions.`; is a top-level key | COMPLETE (moved to top-level) — NEW |
+| 8 | HIGH | Wrong Type | Fix `diffTool`: was "external command string"; is an enum `"auto"`/`"terminal"` | COMPLETE (corrected) — NEW |
+| 9 | HIGH | Wrong Fields | Fix status line `github` field: `github` does not exist; correct subfields are `pr.number`, `pr.url`, `pr.review_state`, `pr.kind`, `workspace.repo.*` | COMPLETE (replaced) — NEW |
+| 10 | HIGH | Wrong Defaults | Fix model aliases: `fable` now resolves to Fable 5.2 (v2.1.321); `best` means "same as opus" (not Fable-first) | COMPLETE (corrected) — NEW |
+| 11 | HIGH | Wrong Semantics | Fix `maxEffortLevel`: is a string key limiting max settable effort level, not an enum of effort names | COMPLETE (corrected) — NEW |
+| 12 | HIGH | Wrong Shape | Fix `modelPicker` object: documented with correct fields (`models`, `sortOrder`, `showAllModels`) | COMPLETE (corrected) — NEW |
+| 13 | HIGH | Wrong Defaults | Fix effort level defaults: Fable 5.2 added to medium-effort list; Opus 5/Sonnet 5 default to `high` | COMPLETE (updated) — NEW |
+| 14 | HIGH | Wrong Env Var | Fix `CLAUDE_CODE_SAFE_MODE` description to match official docs | COMPLETE (corrected) — NEW |
+| 15 | HIGH | Wrong Env Var | Fix `CLAUDE_CODE_FORK_SUBAGENT`: now enabled by default; `0` turns off | COMPLETE (corrected) — NEW |
+| 16 | HIGH | Wrong Env Var | Fix `CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT`: `1` forces minimal, `0` forces full, unset = auto (v2.1.312) | COMPLETE (corrected) — NEW |
+| 17 | HIGH | Wrong Env Var | Fix `CLAUDE_CODE_ENABLE_TODO_TOOLS`: enables legacy TodoWrite/TodoRead/TodoDone on all models (v2.1.234) | COMPLETE (corrected) — NEW |
+| 18 | HIGH | Wrong Env Var | Fix `CLAUDE_CODE_EFFORT_LEVEL`: `max` is session-only, not persistent | COMPLETE (corrected) — NEW |
+| 19 | HIGH | Wrong Env Var | Fix `CLAUDE_CODE_MAX_OUTPUT_TOKENS`: updated stale defaults for 5.x models | COMPLETE (corrected) — NEW |
+| 20 | HIGH | Env Var | Add `FORCE_HYPERLINK` disable behavior: `0`/`false`/`no`/`off` disables hyperlinks even in supported terminals (v2.1.314) | COMPLETE (added) — NEW |
+| 21 | HIGH | Missing Fields | Add status line fields: `fast_mode`, `prompt_cache`, `prompt_id`, `rate_limits.spend_limit.*` | COMPLETE (added) — NEW |
+| 22 | HIGH | Missing Env Vars | Add 18 new env vars from v2.1.297–v2.1.322: `CLAUDE_CODE_DISABLE_FILE_MENTIONS`, `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS`, `CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS`, `CLAUDE_CODE_AUTO_MODE_MODEL`, `CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS`, `CLAUDE_CODE_DISABLE_REFUSAL_FALLBACK`, `CLAUDE_CODE_MODEL_CATALOG`, `CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP`, `CLAUDE_CODE_DISABLE_ULTRATHINK`, `CLAUDE_CODE_SUBAGENT_EFFORT`, `CLAUDE_CODE_DISABLE_NESTED_SESSION_ID`, `CLAUDE_CODE_AUTO_MODE_SERVER`, `CLAUDE_CODE_DISABLE_FEATURE_FLAGS`, `CLAUDE_CODE_DISABLE_MCP_TASK_BACKGROUND`, `CLAUDE_CODE_DISABLE_MCP_TASKS`, `CLAUDE_CODE_LOOP_KEEPALIVE`, `CLAUDE_CODE_PLUGIN_DIR_WATCH`, `CLAUDE_CODE_SUBAGENT_MODEL_FORCE` | COMPLETE (all 18 added) — NEW |
+| 23 | HIGH | Missing Env Vars | Add Vertex region vars for 5.5/Fable 5.2: `VERTEX_REGION_CLAUDE_FABLE_5_1`, `VERTEX_REGION_CLAUDE_FABLE_5_2`, `VERTEX_REGION_CLAUDE_5_5_OPUS`, `VERTEX_REGION_CLAUDE_5_5_SONNET`, `VERTEX_REGION_CLAUDE_HAIKU_5_5` | COMPLETE (all 5 added) — NEW |
+| 24 | MED | Missing Settings | Add `deniedMcpServers` v2.1.318 note: server name auto-added when user dismisses from MCP menu | COMPLETE (added) — NEW |
+| 25 | MED | Quick Reference | Remove `mcpServers` block from Quick Reference example (`mcpServers` belongs in `.mcp.json`, not `settings.json`) | COMPLETE (removed) — NEW |
+| 26 | MED | Quick Reference | Fix `alwaysThinkingEnabled: true` → `false`; `true` is a no-op since thinking is on by default | COMPLETE (changed) — NEW |
+| 27 | MED | Quick Reference | Fix `prUrlTemplate` example: replaced GitLab MR URL with GitHub Enterprise PR URL | COMPLETE (corrected) — NEW |
+| 28 | MED | Useful Commands | Fix `--doctor` → `claude doctor`/`/doctor` (was listed as a CLI flag, not a command) | COMPLETE (corrected) — NEW |
+| 29 | MED | Useful Commands | Fix Ultracode: v2.1.284 enables parallel multi-agent workflow (not extended thinking) | COMPLETE (updated) — NEW |
+| 30 | MED | Wrong Scope | Fix `forceLoginMethod`/`forceLoginGatewayUrl` scope to Managed only | COMPLETE (corrected) — NEW |

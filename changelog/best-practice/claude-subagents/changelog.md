@@ -1570,3 +1570,376 @@ No drift detected on the two tracked dimensions — all 16 frontmatter fields an
 | 1 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
 | 2 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
 | 3 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-11 11:45 AM PKT] Claude Code v2.1.296
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 2 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 3 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-12 11:45 AM PKT] Claude Code v2.1.296
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 2 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 3 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+| 4 | LOW | New Field | Watch: `autoCompactWindow` added in v2.1.296 changelog (lets a subagent auto-compact earlier than the main conversation's window) — not yet in official docs frontmatter table; will become a HIGH drift item when docs catch up | ✋ ON HOLD (not yet in official docs — NEW) |
+
+---
+
+## [2026-10-13 11:45 AM PKT] Claude Code v2.1.296
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 2 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 3 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+| 4 | LOW | New Field | Watch: `autoCompactWindow` added in v2.1.296 changelog (lets a subagent auto-compact earlier than the main conversation's window) — not yet in official docs frontmatter table; will become a HIGH drift item when docs catch up | ✋ ON HOLD (not yet in official docs — RECURRING since 2026-10-12) |
+
+---
+
+## [2026-10-14 11:45 AM PKT] Claude Code v2.1.299
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 2 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 3 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+| 4 | LOW | New Field | Watch: `autoCompactWindow` added in v2.1.296 changelog (lets a subagent auto-compact earlier than the main conversation's window) — not yet in official docs frontmatter table; will become a HIGH drift item when docs catch up | ✋ ON HOLD (not yet in official docs — RECURRING since 2026-10-12) |
+
+---
+
+## [2026-10-15 11:45 AM PKT] Claude Code v2.1.300
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — auto-compact window from 100000 to 1000000 tokens; agent compacts when context reaches this count rather than the main conversation's limit; requires v2.1.296+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12 as LOW watch; upgraded to HIGH now confirmed in official docs) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-17 11:45 AM PKT] Claude Code v2.1.302
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — auto-compact window from 100000 to 1000000 tokens; agent compacts when context reaches this count rather than the main conversation's limit; requires v2.1.296+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-15) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-18 11:33 AM PKT] Claude Code v2.1.302
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — auto-compact window from 100000 to 1000000 tokens; agent compacts when context reaches this count rather than the main conversation's limit; requires v2.1.296+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-19 11:33 AM PKT] Claude Code v2.1.303
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; requires v2.1.296+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — Set to `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load. Ignored when agent runs as main session via `--agent` or `agent` setting. Introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; `cacheTtl` key set to `5m` or `1h` for prompt cache lifetime; reads from subagent files only; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-20 11:33 AM PKT] Claude Code v2.1.304
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-21 11:33 AM PKT] Claude Code v2.1.306
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-22 11:33 AM PKT] Claude Code v2.1.308
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-23 11:33 AM PKT] Claude Code v2.1.309
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-24 11:33 AM PKT] Claude Code v2.1.310
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-25 11:33 AM PKT] Claude Code v2.1.310
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-26 11:33 AM PKT] Claude Code v2.1.310
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-27 11:33 AM PKT] Claude Code v2.1.311
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-28 11:34 AM PKT] Claude Code v2.1.312
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-29 11:33 AM PKT] Claude Code v2.1.312
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-30 11:34 AM PKT] Claude Code v2.1.314
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-10-31 11:33 AM PKT] Claude Code v2.1.316
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-01 11:32 AM PKT] Claude Code v2.1.316
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-02 11:33 AM PKT] Claude Code v2.1.316
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-03 11:34 AM PKT] Claude Code v2.1.317
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-04 11:33 AM PKT] Claude Code v2.1.318
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-05 11:33 AM PKT] Claude Code v2.1.318
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-06 11:43 AM PKT] Claude Code v2.1.318
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-07 11:33 AM PKT] Claude Code v2.1.319
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-08 11:32 AM PKT] Claude Code v2.1.319
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-09 11:33 AM PKT] Claude Code v2.1.319
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-10 11:33 AM PKT] Claude Code v2.1.322
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-11 11:33 AM PKT] Claude Code v2.1.322
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-12 11:33 AM PKT] Claude Code v2.1.322
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-13 11:33 AM PKT] Claude Code v2.1.323
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-11-14 11:33 AM PKT] Claude Code v2.1.325
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `autoCompactWindow` to Frontmatter Fields table (integer, optional — lowers this subagent's auto-compact window to a token count from 100000 to 1000000; added in v2.1.296; confirmed in official docs) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-10-12) |
+| 2 | HIGH | New Field | Add `omitClaudeMd` to Frontmatter Fields table (boolean, optional — set `true` to launch without user, project, and local CLAUDE.md files; managed policy files still load; introduced in v2.1.271) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-09-15) |
+| 3 | HIGH | New Field | Add `experimental` to Frontmatter Fields table (object, optional — experimental options; currently `cacheTtl` key set to `5m` or `1h` for per-agent prompt cache TTL; requires v2.1.248+) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-29) |
+| 4 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all for tasks that don't fit a specialized agent; default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
